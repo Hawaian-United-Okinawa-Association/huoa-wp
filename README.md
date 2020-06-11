@@ -2,7 +2,7 @@
 
 Website redesign for Hawaian United Okinawa Association
 
-Visit the WordPress back-end [here](github.com/masalcedo88/huoa-wp).
+Visit the React front end [here](github.com/masalcedo88/huoa-react).
 
 ## Index:
 - [Scope](#Scope)
