@@ -1,8 +1,8 @@
-# [HUOA](https://www.huoa.org)
+# [HUOA](https://huoa.org/nuuzi/)
 
 Website redesign for Hawaian United Okinawa Association
 
-Visit the React front end [here](github.com/masalcedo88/huoa-react).
+Visit the React front end [here](https://github.com/masalcedo88/huoa-react).
 
 ## Index:
 - [Scope](#Scope)
