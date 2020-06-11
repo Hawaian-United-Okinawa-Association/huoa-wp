@@ -1,4 +1,4 @@
-# [HUOA](www.huoa.org)
+# [HUOA](https://www.huoa.org)
 
 Website redesign for Hawaian United Okinawa Association
 
