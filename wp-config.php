@@ -20,22 +20,22 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'database_name_here' );
+define( 'DB_NAME', 'wordpress');
 
 /** MySQL database username */
-define( 'DB_USER', 'username_here' );
+define( 'DB_USER', 'wordpress');
 
 /** MySQL database password */
-define( 'DB_PASSWORD', 'password_here' );
+define( 'DB_PASSWORD', 'wordpress');
 
 /** MySQL hostname */
-define( 'DB_HOST', 'localhost' );
+define( 'DB_HOST', 'db:3306');
 
 /** Database Charset to use in creating database tables. */
-define( 'DB_CHARSET', 'utf8' );
+define( 'DB_CHARSET', 'utf8');
 
 /** The Database Collate type. Don't change this if in doubt. */
-define( 'DB_COLLATE', '' );
+define( 'DB_COLLATE', '');
 
 /**#@+
  * Authentication Unique Keys and Salts.
@@ -46,14 +46,14 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         'put your unique phrase here' );
-define( 'SECURE_AUTH_KEY',  'put your unique phrase here' );
-define( 'LOGGED_IN_KEY',    'put your unique phrase here' );
-define( 'NONCE_KEY',        'put your unique phrase here' );
-define( 'AUTH_SALT',        'put your unique phrase here' );
-define( 'SECURE_AUTH_SALT', 'put your unique phrase here' );
-define( 'LOGGED_IN_SALT',   'put your unique phrase here' );
-define( 'NONCE_SALT',       'put your unique phrase here' );
+define( 'AUTH_KEY',         '55f4e451a12b5e084ba6dc2f1d88e6a6ae9fb858');
+define( 'SECURE_AUTH_KEY',  'ce88ed59a1fa36c713e25a9440d56baae6501e44');
+define( 'LOGGED_IN_KEY',    '38cbe2a9d31e2b0fc6cd1a6ded7acc0fa9a50e62');
+define( 'NONCE_KEY',        'f9081d30992a5bfc9ff42ac286ae71266bfd85eb');
+define( 'AUTH_SALT',        'fe5528bf2cdd75a0dd85422e40d5637dd11b4357');
+define( 'SECURE_AUTH_SALT', '9065738d573a2a23af41539830fbd191e891dfbc');
+define( 'LOGGED_IN_SALT',   'a1bc35d633dafd5e1f177fec0909a28db0977a1a');
+define( 'NONCE_SALT',       'dbf2af192fdd511a536f93af04ae2ab27cb6c831');
 
 /**#@-*/
 
@@ -78,6 +78,12 @@ $table_prefix = 'wp_';
  * @link https://wordpress.org/support/article/debugging-in-wordpress/
  */
 define( 'WP_DEBUG', false );
+
+// If we're behind a proxy server and using HTTPS, we need to alert WordPress of that fact
+// see also http://codex.wordpress.org/Administration_Over_SSL#Using_a_Reverse_Proxy
+if (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] === 'https') {
+	$_SERVER['HTTPS'] = 'on';
+}
 
 /* That's all, stop editing! Happy publishing. */
 
