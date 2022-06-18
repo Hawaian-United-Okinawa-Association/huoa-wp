@@ -84,7 +84,9 @@ define( 'WP_DEBUG', false );
 if (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] === 'https') {
 	$_SERVER['HTTPS'] = 'on';
 }
-
+define( 'WP_DEBUG', true );
+define( 'WP_DEBUG_LOG', true );
+define( 'WP_DEBUG_DISPLAY', false );
 /* That's all, stop editing! Happy publishing. */
 
 /** Absolute path to the WordPress directory. */
