@@ -89,6 +89,7 @@ define( 'WP_DEBUG', true );
 define( 'WP_DEBUG_LOG', true );
 define( 'WP_DEBUG_DISPLAY', true );
 @ini_set('display_errors', E_ALL);
+@ini_set('max_input_vars', 10000);
 /* That's all, stop editing! Happy publishing. */
 
 /** Absolute path to the WordPress directory. */
